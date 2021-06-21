@@ -1,27 +1,29 @@
-/// TERMINOLOGIES
+# API ARCHITECTURE & DESIGN
 
-client : All the naive user are called clients.
-controller : The administrator of the product/contract is called a controller.
+**TERMINOLOGIES**
 
-/// PARENT ENDPOINT STRUCTURES
+`client` : _All the naive user are called clients_
+`controller` : _The administrator of the product/contract is called a controller_
 
-i. url : `fortunetta.com/api/client`
+1. PARENT ENDPOINT STRUCTURES
+
+-   url : `fortunetta.com/api/client`
 
 Usage specification : All the client related information transmissions shall happen via this enpoint.
 
-ii. url : `fortunetta.com/api/controller`
+-   url : `fortunetta.com/api/controller`
 
 Usage specification : All the adminitration related information transmission shall happen via this endpoint
 
-/// CHILD ENDPOINT STRUCTURES : Client endpoint
+2. CHILD ENDPOINT STRUCTURES : Client endpoint
 
-// POST METHODS
+-   POST METHODS
 
 i. --url : fortunetta.com/api/client/login/${wallet-address}
 
-METHOD : POST
-HEADER : -
-body : -
+> METHOD : POST
+> HEADER : -
+> body : -
 
 --usage-specification : Logs in the address, and return a jwt_token
 
@@ -30,7 +32,7 @@ body : -
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIzNDU2Nzg5LCJuYW1lIjoiSm9zZXBoIn0.OpOSSw7e485LOP5PrzScxHb7SR6sAOMRckfFwi4rp7o
 }
 
-// GET METHODS
+-   GET METHODS
 
 i. url : fortunetta.com/api/client/details/${wallet-address}
 
@@ -49,7 +51,7 @@ avatar,
 level
 }
 
-/// PATCH METHODS
+-   PATCH METHODS
 
 i. --url : fortunetta.com/api/client/update_user/:client_id
 
