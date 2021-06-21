@@ -15,12 +15,44 @@ ii. url : fortunetta.com/api/controller
 
 CHILD ENDPOINT STRUCTURES : Client endpoint
 
-i. url : fortunetta.com/api/client/${client-id}
+i. url : fortunetta.com/api/client/:client_id
 
 // Usage specification : Retrived the client information as an object for a specific client-id
 
 // Return sample :
 
 {
+Name, 
+Email, 
+WalletAddress, 
+Bio, 
+DisplayPicture
+}
 
+ii. url : fortunetta.com/api/client/create_user
+
+// Usage specification :Get the client information as an object from a client
+
+// Return sample :
+
+{
+Name, 
+Email, 
+WalletAddress, 
+Bio, 
+DisplayPicture
+}
+
+iii. url : fortunetta.com/api/client/update_user/:client_id
+
+// Usage specification :Get the client updated information as an object from a client
+
+// Return sample :
+
+{
+Name, 
+Email, 
+WalletAddress, 
+Bio, 
+DisplayPicture
 }
