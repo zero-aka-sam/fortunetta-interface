@@ -11,4 +11,16 @@ i. url : fortunetta.com/api/client
 
 ii. url : fortunetta.com/api/controller
 
-// Usage specification : All the adminitration related information transmission shall happen via this endpoin
+// Usage specification : All the adminitration related information transmission shall happen via this endpoint
+
+CHILD ENDPOINT STRUCTURES : Client endpoint
+
+i. url : fortunetta.com/api/client/${client-id}
+
+// Usage specification : Retrived the client information as an object for a specific client-id
+
+// Return sample :
+
+{
+
+}
